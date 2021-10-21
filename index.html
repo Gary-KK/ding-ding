@@ -23,7 +23,7 @@
         window.onload = function () {
           dingDing();
 
-          var countDownDate = new Date("2021-10-28T15:00:00").getTime();
+          var countDownDate = new Date("2021-10-28T15:00:00Z").getTime();
 
           // Update the count down every 1 second
           var x = setInterval(function() {
@@ -81,6 +81,7 @@
 
     #countdown {
       color: white;
+      font-size: 30px;
       font-family: 'Fjalla One', sans-serif;
     }
   </style>
