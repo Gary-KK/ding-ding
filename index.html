@@ -7,6 +7,13 @@
       <div class="ding-ding">
         <img src="img/ding-ding.png" />
       </div>
+      <audio id="ding-ding-sound" src="audio/dingding.mp3" preload="auto"></audio>
+      <a href="javascript:play_single_sound();">Play</a>
+      <script type="text/javascript">
+        function play_single_sound() {
+          document.getElementById('ding-ding-sound').play();
+        }
+      </script>
     </div>
   </body>
   <style>
