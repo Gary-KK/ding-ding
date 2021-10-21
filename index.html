@@ -5,14 +5,18 @@
   <body>
     <div class="container">
       <div class="ding-ding">
-        <img src="img/ding-ding.png" />
+        <a href="javascript:play_single_sound();"><img src="img/ding-ding.png" /></a>
       </div>
       <audio id="ding-ding-sound" src="audio/dingding.mp3" preload="auto"></audio>
-      <a href="javascript:play_single_sound();">Play</a>
+      
       <script type="text/javascript">
-        function play_single_sound() {
+        function dingDing() {
           document.getElementById('ding-ding-sound').play();
         }
+
+        window.onload = function () {
+          dingDing();
+        };
       </script>
     </div>
   </body>
