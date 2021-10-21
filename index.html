@@ -3,6 +3,7 @@
     <title>🔔🔔</title>
     <link rel="stylesheet" type="text/css" href="csshake.min.css">
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="icon" type="image/png" href="img/ding-ding.png"/>
   </head>
   <body>
     <div class="container">
@@ -10,7 +11,7 @@
         <a href="javascript:dingDing();"><img src="img/ding-ding.png" /></a>
       </div>
       <div id="countdown"></div>
-      <audio id="ding-ding-sound" src="audio/dingding.mp3" preload="auto"></audio>
+      <audio id="ding-ding-sound" src="audio/dingding.mp3" preload="auto" autoplay></audio>
       
       <script type="text/javascript">
         function dingDing() {
@@ -57,6 +58,7 @@
       height: 100%;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
 
       background: rgb(207,127,25);
       background: linear-gradient(0deg, rgba(207,127,25,1) 0%, rgba(253,187,45,1) 100%);
@@ -64,6 +66,7 @@
 
     .ding-ding {
       max-width: 800px;
+      margin-bottom: 20px;
     }
 
     img {
